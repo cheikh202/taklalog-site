@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "partners": "Partenaires",
+    "contact": "Contact",
+    "requestQuote": "Demander un Devis"
+  },
+  "hero": {
+    "title1": "Transport Fiable",
+    "title2": "Vitesse Garantie",
+    "title3": "Professionnalisme Inoubliable",
+    "description": "Vos marchandises. Notre réseau. Zéro tracas. La force d'un réseau mondial avec la fiabilité du leader mauritanien de la logistique locale.",
+    "cta": "Commencer",
+    "contactUs": "Contactez-nous"
+  },
+  "about": {
+    "title": "Qui Sommes-Nous",
+    "subtitle": "taklalog – Solutions Logistiques Complètes, du Port à la Porte.",
+    "p1": "Nous sommes une entreprise moderne de transport et de logistique établie en Mauritanie avec un objectif clair : redéfinir le sens du fret routier. Nous avons commencé avec une vision simple — être le partenaire qui garantit que chaque expédition arrive à temps, en parfait état et avec le plus haut niveau de professionnalisme.",
+    "p2": "Aujourd'hui, taklalog est devenu un nom de confiance grâce à notre flotte moderne de camions équipés de la dernière technologie de suivi GPS, une équipe professionnelle 24/7, et un vaste réseau routier couvrant Nouakchott, toutes les régions mauritaniennes et les pays voisins.",
+    "p3": "Que vous ayez besoin de transporter des marchandises commerciales, des matériaux de construction ou des expéditions spéciales — nous livrons avec une confiance et une tranquillité d'esprit totales."
+  },
+  "vision": {
+    "title": "Notre Vision",
+    "desc": "Devenir le nom principal de la logistique terrestre en Afrique de l'Ouest en combinant une technologie de pointe avec les valeurs traditionnelles d'honnêteté, de précision et de rapidité."
+  },
+  "values": {
+    "title": "Nos Valeurs",
+    "trustTitle": "Confiance",
+    "trustDesc": "Chaque expédition que nous transportons est traitée comme un dépôt sacré.",
+    "profTitle": "Professionnalisme",
+    "profDesc": "Des chauffeurs hautement qualifiés et des camions qui répondent aux normes de sécurité internationales.",
+    "speedTitle": "Vitesse",
+    "speedDesc": "Des horaires précis — parce que votre temps est votre atout le plus précieux.",
+    "innovTitle": "Innovation",
+    "innovDesc": "Suivi en temps réel via l'application mobile, rapports automatisés et solutions personnalisées."
+  },
+  "why": {
+    "title": "Pourquoi Choisir taklalog ?",
+    "f1": "Flotte de camions neufs et régulièrement entretenus",
+    "f2": "Couverture complète à travers la Mauritanie et au-delà",
+    "f3": "Suivi en direct de vos expéditions 24/7",
+    "f4": "Prix compétitifs avec un service premium",
+    "f5": "Équipe de support client qui parle votre langue",
+    "footer": "taklalog n'est pas juste une entreprise de camionnage... C'est la tranquillité d'esprit dont vous avez besoin pour bien dormir en sachant que vos marchandises sont entre de bonnes mains."
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "taklalog – Propulsé par les géants mondiaux du transport maritime.",
+    "desc1": "Nous sommes fiers de nous associer aux compagnies maritimes les plus prestigieuses et célèbres au niveau mondial : Maersk, CMA CGM, MSC.",
+    "desc2": "Ces partenariats stratégiques puissants nous permettent d'offrir des solutions logistiques complètes porte-à-porte et multimodales.",
+    "desc3": "Nous combinons notre flotte moderne de camions mauritaniens avec leurs réseaux mondiaux de fret maritime pour garantir que vos expéditions voyagent sans problème depuis n'importe quel port du monde jusqu'à votre entrepôt — plus rapidement, en toute sécurité et avec une transparence totale."
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des Solutions Logistiques Complètes, du Port à la Porte.",
+    "s1Title": "Fret Terrestre & Transport Routier",
+    "s1F1": "Services de chargement complet (FTL) et partiel (LTL)",
+    "s1F2": "Marchandises commerciales & cargaisons spéciales",
+    "s1F3": "Couverture nationale et transfrontalière",
+    "s1F4": "Flotte suivie par GPS",
+    "s2Title": "Dédouanement",
+    "s2F1": "Dédouanement complet import/export",
+    "s2F2": "Préparation des documents requis",
+    "s2F3": "Dédouanement rapide aux ports et frontières",
+    "s2F4": "Gestion experte des tarifs et permis",
+    "s3Title": "Opérations Portuaires",
+    "s3F1": "Manutention et arrimage",
+    "s3F2": "Chargement et stockage de conteneurs",
+    "s3F3": "Coordination avec les compagnies maritimes",
+    "s3F4": "Livraison porte-à-porte du port au site"
+  },
+  "footer": {
+    "text": "taklalog - Redéfinir le sens du fret routier.",
+    "contact": "Infos Contact",
+    "follow": "Suivez-Nous",
+    "allRights": "Tous droits réservés. taklalog © 2026."
+  }
+}

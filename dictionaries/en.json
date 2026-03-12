@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "partners": "Partners",
+    "contact": "Contact",
+    "requestQuote": "Request Quote"
+  },
+  "hero": {
+    "title1": "Reliable Transport",
+    "title2": "Guaranteed Speed",
+    "title3": "Unforgettable Professionalism",
+    "description": "Your cargo. Our network. Zero worries. The strength of a global network with the reliability of a local Mauritanian logistics leader.",
+    "cta": "Get Started",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "taklalog – Complete Logistics Solutions from Port to Door.",
+    "p1": "We are a modern transportation and logistics company established in Mauritania with one clear goal: to redefine the meaning of road freight. We started with a simple vision — to be the partner who ensures every shipment arrives on time, in perfect condition, and with the highest level of professionalism.",
+    "p2": "Today, taklalog has grown into a trusted name thanks to our modern fleet of trucks equipped with the latest GPS tracking technology, a professional 24/7 team, and a wide road network covering Nouakchott, all Mauritanian states, and neighboring countries.",
+    "p3": "Whether you need to transport commercial goods, construction materials, or special shipments — we deliver with complete trust and peace of mind."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "desc": "To become the leading name in land logistics across West Africa by combining cutting-edge technology with the traditional values of honesty, precision, and speed."
+  },
+  "values": {
+    "title": "Our Values",
+    "trustTitle": "Trust",
+    "trustDesc": "Every shipment we carry is treated as a sacred trust.",
+    "profTitle": "Professionalism",
+    "profDesc": "Highly trained drivers and trucks that meet international safety standards.",
+    "speedTitle": "Speed",
+    "speedDesc": "Precise schedules — because your time is your most valuable asset.",
+    "innovTitle": "Innovation",
+    "innovDesc": "Real-time tracking via mobile app, automated reports, and custom solutions."
+  },
+  "why": {
+    "title": "Why Choose taklalog?",
+    "f1": "Brand-new, regularly maintained truck fleet",
+    "f2": "Complete coverage across Mauritania and beyond",
+    "f3": "Live tracking of your shipments 24/7",
+    "f4": "Competitive prices with premium service",
+    "f5": "Customer support team that speaks your language",
+    "footer": "taklalog is not just a trucking company… It is the peace of mind you need to sleep well knowing your cargo is in safe hands."
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "taklalog – Powered by the world’s leading shipping giants.",
+    "desc1": "We are proud to partner with the most prestigious and famous shipping companies globally: Maersk, CMA CGM, MSC.",
+    "desc2": "These powerful strategic partnerships allow us to offer complete door-to-door and multimodal logistics solutions.",
+    "desc3": "We combine our modern Mauritanian truck fleet with their global sea freight networks to ensure your shipments travel seamlessly from any port in the world straight to your warehouse — faster, safer, and with full transparency."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete Logistics Solutions from Port to Door.",
+    "s1Title": "Land Freight & Road Transport",
+    "s1F1": "FTL and LTL services",
+    "s1F2": "Commercial goods & special cargo",
+    "s1F3": "Nationwide and cross-border coverage",
+    "s1F4": "GPS-equipped fleet tracking",
+    "s2Title": "Customs Clearance",
+    "s2F1": "Full clearance for imports/exports",
+    "s2F2": "Preparation of required documents",
+    "s2F3": "Fast clearance at ports and borders",
+    "s2F4": "Expert handling of tariffs and permits",
+    "s3Title": "Port Operations",
+    "s3F1": "Handling and stevedoring",
+    "s3F2": "Container loading and storage",
+    "s3F3": "Coordination with shipping lines",
+    "s3F4": "Door-to-door port to site delivery"
+  },
+  "footer": {
+    "text": "taklalog - Redefining the meaning of road freight.",
+    "contact": "Contact Info",
+    "follow": "Follow Us",
+    "allRights": "All rights reserved. taklalog © 2026."
+  }
+}
