@@ -37,8 +37,8 @@ export default function HomePage() {
           href={pathname}
           locale={l}
           className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 ${locale === l
-              ? "bg-[#0F2244] text-white shadow"
-              : "text-gray-500 hover:text-[#0F2244]"
+            ? "bg-[#0F2244] text-white shadow"
+            : "text-gray-500 hover:text-[#0F2244]"
             }`}
         >
           {l}
@@ -56,9 +56,9 @@ export default function HomePage() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
-              <Image 
-                src="/logo_taklalog.jpeg" 
-                alt="Taklalog Logo" 
+              <Image
+                src="/logo_taklalog.jpeg"
+                alt="Taklalog Logo"
                 fill
                 className="object-cover"
               />
@@ -103,7 +103,7 @@ export default function HomePage() {
             <LocaleSwitcher />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#0F2244] hover:text-[#F97316] transition"
+              className="text-white hover:text-[#F97316] transition"
             >
               {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
@@ -181,13 +181,13 @@ export default function HomePage() {
               >
                 {t("nav.requestQuote")}
               </Link>
-              
+
               <p className="text-xl text-blue-100/90 font-medium max-w-2xl">
-                {locale === "ar" 
+                {locale === "ar"
                   ? "حلول لوجستية سريعة وآمنة وفعالة."
                   : locale === "fr"
-                  ? "Solutions logistiques rapides, sûres et efficaces."
-                  : "Fast, secure, and efficient logistics solutions."}
+                    ? "Solutions logistiques rapides, sûres et efficaces."
+                    : "Fast, secure, and efficient logistics solutions."}
               </p>
             </div>
 
@@ -434,20 +434,20 @@ export default function HomePage() {
 
             {/* Brand */}
             <div className="lg:col-span-2">
-                <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-4 shadow-lg inline-block mb-6">
-                  <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
-                    <Image 
-                      src="/logo_taklalog.jpeg" 
-                      alt="Taklalog Logo" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <span className="text-2xl font-black tracking-tighter">
-                    <span className="text-[#0F2244]">TAKLA</span>
-                    <span className="text-[#F97316]">LOG</span>
-                  </span>
-                </Link>
+              <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-4 shadow-lg inline-block mb-6">
+                <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
+                  <Image
+                    src="/logo_taklalog.jpeg"
+                    alt="Taklalog Logo"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <span className="text-2xl font-black tracking-tighter">
+                  <span className="text-[#0F2244]">TAKLA</span>
+                  <span className="text-[#F97316]">LOG</span>
+                </span>
+              </Link>
               <p className="text-blue-200 text-base leading-relaxed max-w-sm">{t("footer.text")}</p>
             </div>
 
