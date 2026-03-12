@@ -206,7 +206,7 @@ export default function HomePage() {
               {[
                 { num: "24/7", label: locale === "ar" ? "دعم مستمر" : locale === "fr" ? "Support continu" : "Support" },
                 { num: "100%", label: locale === "ar" ? "تغطية وطنية" : locale === "fr" ? "Couverture nationale" : "National coverage" },
-                { num: "3", label: locale === "ar" ? "شراكات عالمية" : locale === "fr" ? "Partenaires mondiaux" : "Global partners" },
+                { num: "5", label: locale === "ar" ? "شراكات عالمية" : locale === "fr" ? "Partenaires mondiaux" : "Global partners" },
               ].map((stat, i) => (
                 <div key={i} className={isRtl ? "text-right" : ""}>
                   <div className="text-3xl font-extrabold text-[#F97316]">{stat.num}</div>
@@ -426,25 +426,32 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {["Maersk", "CMA CGM", "MSC", "taklalog"].map((name, i) => (
-                <motion.div
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {[
+                { name: "Maersk", src: "/Maersk_Logo.png", url: "https://www.maersk.com/" },
+                { name: "CMA CGM", src: "/CMA_CGM_logo.png", url: "https://www.cma-cgm.fr/" },
+                { name: "MSC", src: "/Msc_logo.jpg", url: "https://www.msc.com/" },
+                { name: "ARKAS Line", src: "/Arkas_line_logo.jpg", url: "https://arkasline.com/" },
+                { name: "Hapag-Lloyd", src: "/hapag-lloyd_logo.png", url: "https://www.hapag-lloyd.com/" },
+                { name: "taklalog", src: "/logo_taklalog.jpeg", url: "#" },
+              ].map((partner, i) => (
+                <motion.a
                   key={i}
-                  whileHover={{ y: -4 }}
-                  className="bg-white rounded-2xl p-8 flex items-center justify-center shadow-sm border border-gray-100 hover:border-[#F97316]/40 hover:shadow-md transition-all aspect-[3/2]"
+                  href={partner.url}
+                  target={partner.url === "#" ? undefined : "_blank"}
+                  rel={partner.url === "#" ? undefined : "noopener noreferrer"}
+                  whileHover={{ y: -4, scale: 1.02 }}
+                  className="bg-white rounded-2xl p-6 flex items-center justify-center shadow-sm border border-gray-100 hover:border-[#F97316]/40 hover:shadow-md transition-all aspect-[3/2] overflow-hidden group"
                 >
-                  {name === "taklalog" ? (
+                  <div className="relative w-full h-full flex items-center justify-center">
                     <Image
-                      src="/logo_taklalog.jpeg"
-                      alt="taklalog"
-                      width={120}
-                      height={60}
-                      className="object-contain"
+                      src={partner.src}
+                      alt={partner.name}
+                      fill
+                      className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
                     />
-                  ) : (
-                    <span className="font-black text-lg text-gray-400 tracking-widest text-center">{name}</span>
-                  )}
-                </motion.div>
+                  </div>
+                </motion.a>
               ))}
             </div>
           </div>
@@ -517,7 +524,7 @@ export default function HomePage() {
                   </svg>
                 </a>
                 <a
-                  href="https://wa.me/4191499"
+                  href="https://wa.me/22200000000"
                   target="_blank"
                   rel="noreferrer"
                   className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#25D366] flex items-center justify-center transition-colors"
