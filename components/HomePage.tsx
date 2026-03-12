@@ -51,19 +51,23 @@ export default function HomePage() {
     <div className="w-full min-h-screen bg-white font-sans">
 
       {/* ─── NAVBAR ─── */}
-      <nav className="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+      <nav className="fixed top-0 inset-x-0 z-50 bg-[#0F2244]/90 backdrop-blur-md border-b border-white/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
           {/* Logo */}
-          <a href="#" className="flex-shrink-0">
-            <Image
-              src="/logo_taklalog.jpeg"
-              alt="taklalog logo"
-              width={160}
-              height={64}
-              className="h-14 w-auto object-contain"
-              priority
-            />
-          </a>
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
+              <Image 
+                src="/logo_taklalog.jpeg" 
+                alt="Taklalog Logo" 
+                fill
+                className="object-cover"
+              />
+            </div>
+            <span className="text-2xl font-black tracking-tighter">
+              <span className="text-white group-hover:text-orange-400 transition-colors">TAKLA</span>
+              <span className="text-[#F97316]">LOG</span>
+            </span>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-8">
@@ -76,7 +80,7 @@ export default function HomePage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-[#0F2244] font-semibold text-sm hover:text-[#F97316] transition-colors"
+                className="text-white/90 font-bold text-sm hover:text-[#F97316] transition-colors uppercase tracking-widest"
               >
                 {item.label}
               </a>
@@ -144,105 +148,68 @@ export default function HomePage() {
         </AnimatePresence>
       </nav>
 
-      {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#0F2244]">
-        {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#F97316]/10 blur-[120px] translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-orange-300/5 blur-[80px]" />
-          {/* Dot grid */}
-          <div
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: "radial-gradient(circle, #F97316 1px, transparent 1px)",
-              backgroundSize: "40px 40px",
-            }}
+      <section className="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden bg-[#0F2244]">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <Image
+            src="/truck_hero.png"
+            alt="Logistics Truck"
+            fill
+            className="object-cover opacity-40"
+            priority
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0F2244]/80 via-transparent to-[#0F2244]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0F2244] via-transparent to-[#0F2244]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Text */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className={isRtl ? "text-right" : ""}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F97316]/15 border border-[#F97316]/30 mb-8">
-              <span className="w-2 h-2 rounded-full bg-[#F97316] animate-pulse" />
-              <span className="text-[#F97316] text-sm font-semibold tracking-wide">
-                {t("hero.title1")} • {t("hero.title2")}
-              </span>
-            </div>
-
-            <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-6">
-              {t("hero.title3")}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tight mb-8">
+              {t("hero.title1")},
               <br />
-              <span className="text-[#F97316]">taklalog</span>
+              {t("hero.title2")}
             </h1>
 
-            <p className="text-lg text-blue-200/80 max-w-xl mb-10 leading-relaxed">
-              {t("hero.description")}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-base transition-all shadow-[0_8px_25px_rgba(249,115,22,0.4)] hover:shadow-[0_8px_35px_rgba(249,115,22,0.6)] transform hover:-translate-y-1"
-              >
-                {t("hero.cta")}
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
+            <div className="flex flex-col items-center gap-6">
+              <Link
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#F97316] text-white hover:text-[#F97316] px-8 py-4 rounded-full font-bold text-base transition-all transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center bg-[#F97316] hover:bg-orange-500 text-white px-10 py-5 rounded-xl font-black text-lg transition-all shadow-[0_10px_30px_rgba(249,115,22,0.5)] hover:shadow-[0_15px_40px_rgba(249,115,22,0.7)] transform hover:-translate-y-1 uppercase tracking-wider"
               >
-                {t("hero.contactUs")}
-              </a>
+                {t("nav.requestQuote")}
+              </Link>
+              
+              <p className="text-xl text-blue-100/90 font-medium max-w-2xl">
+                {locale === "ar" 
+                  ? "حلول لوجستية سريعة وآمنة وفعالة."
+                  : locale === "fr"
+                  ? "Solutions logistiques rapides, sûres et efficaces."
+                  : "Fast, secure, and efficient logistics solutions."}
+              </p>
             </div>
 
-            {/* Stats */}
-            <div className="mt-14 grid grid-cols-3 gap-6 pt-10 border-t border-white/10">
+            {/* Stats - moved slightly down or adjusted */}
+            <div className="mt-20 flex flex-wrap justify-center gap-12 md:gap-24 pt-10 border-t border-white/10">
               {[
                 { num: "24/7", label: locale === "ar" ? "دعم مستمر" : locale === "fr" ? "Support continu" : "Support" },
                 { num: "100%", label: locale === "ar" ? "تغطية وطنية" : locale === "fr" ? "Couverture nationale" : "National coverage" },
                 { num: "5", label: locale === "ar" ? "شراكات عالمية" : locale === "fr" ? "Partenaires mondiaux" : "Global partners" },
               ].map((stat, i) => (
-                <div key={i} className={isRtl ? "text-right" : ""}>
-                  <div className="text-3xl font-extrabold text-[#F97316]">{stat.num}</div>
-                  <div className="text-sm text-blue-300/70 mt-1">{stat.label}</div>
+                <div key={i} className="text-center">
+                  <div className="text-4xl font-black text-[#F97316]">{stat.num}</div>
+                  <div className="text-sm font-bold text-blue-200/70 mt-1 uppercase tracking-widest">{stat.label}</div>
                 </div>
               ))}
-            </div>
-          </motion.div>
-
-          {/* Right: Logo showcase */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center justify-center"
-          >
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <div className="absolute inset-0 rounded-full bg-white/5 animate-pulse" />
-              <div className="absolute inset-4 rounded-full bg-white/5" />
-              <div className="absolute inset-8 rounded-full bg-white/10 flex items-center justify-center shadow-2xl overflow-hidden">
-                <Image
-                  src="/logo_taklalog.jpeg"
-                  alt="taklalog"
-                  width={320}
-                  height={320}
-                  className="object-contain p-6"
-                  priority
-                />
-              </div>
             </div>
           </motion.div>
         </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
-          <ChevronDown className="w-6 h-6" />
+          <ChevronDown className="w-8 h-8" />
         </div>
       </section>
 
@@ -467,15 +434,20 @@ export default function HomePage() {
 
             {/* Brand */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl p-4 inline-block mb-6 shadow-lg">
-                <Image
-                  src="/logo_taklalog.jpeg"
-                  alt="taklalog"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain"
-                />
-              </div>
+                <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-4 shadow-lg inline-block mb-6">
+                  <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
+                    <Image 
+                      src="/logo_taklalog.jpeg" 
+                      alt="Taklalog Logo" 
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <span className="text-2xl font-black tracking-tighter">
+                    <span className="text-[#0F2244]">TAKLA</span>
+                    <span className="text-[#F97316]">LOG</span>
+                  </span>
+                </Link>
               <p className="text-blue-200 text-base leading-relaxed max-w-sm">{t("footer.text")}</p>
             </div>
 
